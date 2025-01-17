@@ -29,7 +29,7 @@ router.post('/createuser',
                 location: req.body.location
             })
             res.json({ success: true })
-        } catch (error) {
+        } catch (error ) {
             console.log(error);
             res.json({ success: false })
         }
