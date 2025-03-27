@@ -4,7 +4,7 @@ const User = require('../models/User');
 const { body, validationResult } = require('express-validator')
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcryptjs")
-const jwtSecret = "HelloiamShriFromPune#"
+const jwtSecret = "HelloiamFromMaharashtra"
 
 router.post('/createuser',
     [body('email').isEmail(),
@@ -34,6 +34,10 @@ router.post('/createuser',
             res.json({ success: false })
         }
     })
+
+    function arr() {
+
+    }
 
 router.post('/loginuser', [body('email').isEmail(),
 body('password', "Incorrect Password...").isLength({ min: 5 })]
